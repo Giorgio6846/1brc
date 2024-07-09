@@ -17,7 +17,7 @@ struct cityStruct {
     bool isEmpty() const {return name == "";}
 };
 
-void addData(map <string,cityStruct> cities, string nameCity, string tempCity) {
+void addData(map <string,cityStruct> &cities, string nameCity, string tempCity) {
     float tmpFCity;
     tmpFCity = stof(tempCity);
 
@@ -34,6 +34,7 @@ void addData(map <string,cityStruct> cities, string nameCity, string tempCity) {
         city.max = tmpFCity;
     }
 
+    cities[nameCity] = city;
 }
 
 int main() {
@@ -48,7 +49,7 @@ int main() {
 
     while(getline(inputFile, line))
     {
-        if(steps % 10000 == 0) {
+        if(steps % 100000 == 0 && steps != 0) {
             cout << steps << endl;
         }
         stringstream stream(line);

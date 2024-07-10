@@ -1,0 +1,8 @@
+[
+{
+  "directory": "/Users/giorgio6846/Code/Github/1brc/src",
+  "command": "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   -std=c++2b -arch arm64 -isysroot /Applications/Xcode-beta.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -o CMakeFiles/v1_baseline.dir/v1_baseline.cpp.o -c /Users/giorgio6846/Code/Github/1brc/src/v1_baseline.cpp",
+  "file": "/Users/giorgio6846/Code/Github/1brc/src/v1_baseline.cpp",
+  "output": "CMakeFiles/v1_baseline.dir/v1_baseline.cpp.o"
+}
+]

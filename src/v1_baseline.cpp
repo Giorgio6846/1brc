@@ -3,18 +3,17 @@
 #include <string>
 #include <sstream>
 #include <map>
+#include <cstdio>
+#include "Headers/stdc++.h"
 
 using namespace std;
 
 struct cityStruct {
-    float total = 0;
+    int total = 0;
     int steps = 0;
 
-    float min = 999;
-    float max = -999;
-
-    string name;
-    bool isEmpty() const {return name == "";}
+    int min = 999;
+    int max = -999;
 };
 
 void addData(map <string,cityStruct> &cities, string nameCity, string tempCity) {
@@ -37,13 +36,13 @@ void addData(map <string,cityStruct> &cities, string nameCity, string tempCity) 
     cities[nameCity] = city;
 }
 
-int main() {
+void lectureFile(string filePath) {
     long long steps = 0;
     map <string, cityStruct> cities;
     ifstream inputFile;
     ofstream outputFile;
 
-    inputFile.open("measurements.txt", ios::in);
+    inputFile.open(filePath, ios::in);
     string line;
     string nameCity, tempCity;
 
@@ -69,4 +68,9 @@ int main() {
         outputFile << cityString;
     }
     outputFile.close();
+
+}
+
+int main() {
+    lectureFile("./1brc/measurements.txt");
 }

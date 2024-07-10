@@ -6,8 +6,8 @@
                 "${workspaceFolder}/**"
             ],
             "compilerPath": "/usr/bin/clang",
-            "cStandard": "c11",
-            "cppStandard": "c++11",
+            "cStandard": "c23",
+            "cppStandard": "c++23",
             "intelliSenseMode": "macos-clang-arm64",
             "compilerArgs": [
                 ""

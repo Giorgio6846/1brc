@@ -1,5 +1,5 @@
-measurements.txt
-output.txt
-a.out
-
+*/.DS_Store
 /build
+
+
+src/output.txt

@@ -18,3 +18,4 @@ endif()
 
 add_executable(v1_baseline v1_baseline.cpp)
 add_executable(v3_readline v3_readline.cpp)
+add_executable(v4_refactor v4_refactor.cpp)
